@@ -26,9 +26,9 @@ categories: Java
 
 ### 그럼 언제 무엇을 써야할까?
 
-**1. 추가한 순서대로 순서가 보장되어야 함** -> LinkedHashSet
-**2. 정렬이 필요함** -> TreeSet
-그 외는 HashSet
+1. 추가한 순서대로 순서가 보장되어야 함 -> LinkedHashSet
+2. 정렬이 필요함 -> TreeSet
+3. 그 외는 HashSet
 
 ## Set 사용 예시
 
