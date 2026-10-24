@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "배열
-date:   2026-10-26 09:00:00 +0530
-categories: Javascript NodeJS
+title: "배열"
+date: 2026-10-26 09:00:00 +0530
+categories: Java
 ---
 
 # 배열
