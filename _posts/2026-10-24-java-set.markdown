@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Set 자료구조
+title: "Set 자료구조"
 date: 2026-10-24 18:20:00 +0900
 categories: Java
 ---
