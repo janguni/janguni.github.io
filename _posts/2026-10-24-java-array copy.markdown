@@ -1,0 +1,54 @@
+---
+layout: post
+title: "Set"
+date: 2026-10-24 18:20:00 +0530
+categories: Java
+---
+
+> 중복을 허용하지 않는 자료구조
+
+## 구현체
+
+### HashSet
+
+- 순서를 보장하지 않음
+- 추가, 검색, 삭제가 빠름 O(1)
+
+### TreeSet
+
+- 자동 졍렬
+- 추가, 검색, 삭제는 O(logN)
+
+### LinkedHashSet
+
+- 순서 보장 (요소를 추가한 순서 like List)
+- 추가, 검색, 삭제가 빠름 O(1)
+
+### 그럼 언제 무엇을 써야할까?
+
+**1. 추가한 순서대로 순서가 보장되어야 함** -> LinkedHashSet
+**2. 정렬이 필요함** -> TreeSet
+그 외는 HashSet
+
+## Set 사용 예시
+
+```java
+Set<Integer> set = new HashSet<>();
+
+// 1. 요소 삽입/제거
+set.add(1); // 요소 삽입
+set.add(2);
+set.remove(3); // 요소 제거 (요소가 없어도 오류 안남)
+
+// 2. 요소 찾기
+boolean isContain = set.contains(1);  // 있으면 true 반환
+
+// 3. size 확인
+int size = set.size();
+
+// 4. 비어있는지 확인
+boolean isEmpty = set.isEmpty(); // 비어있으면 true 반환
+
+// 5. 순회
+set.forEach(e -> System.out.println(e));
+```
